@@ -4,8 +4,7 @@ node{
     }
     stage('Ansible') {
       ansiblePlaybook (
-          colorized: true, 
-          become: true,             
+          colorized: true,             
           playbook: 'playbook.yml',
           inventory: 'hosts.yml'
       )
